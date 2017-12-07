@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head profile="https://www.w3.org/2005/10/profile">
+	
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<!--	<script src="js/smoothscroll.js" type="text/javascript"></script> -->
+
+	<link rel="icon" 
+      type="image/png" 
+      href="images/logo.png">
+
+	<title>
+		Lillian Osborne Lighting Tutorial
+	</title>
+
+
+	<script type="text/javascript">
+		function start() {
+			window.location.href = "info.html";
+		}
+
+		function hang() {
+			window.location.href = "hang.html";
+		}
+	</script>
+
+
+
+
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
+
+
+</head>
+
+
+<body style="overflow-x: hidden">
+	
+	<div id="root">
+		
+		<div id="header">
+			
+			<div id="sitename">
+				<h1 style="font-family: 'Sofia'">LO Lighting Tutorial</h1>
+			</div>
+
+			<div id="logo">
+				<a href="#root" class="smoothScroll">
+					<img src="images/logo.jpg" />
+				</a>
+			</div>
+
+			<div id="menu">
+				<a href="#root" class="smoothScroll" id="homemenu">Home Page</a>
+				<a href="oldsite.html" id="oldsitemenu">Old Site</a>
+				<a href="#part2" id="beginmenu" class="smoothScroll">Get Started</a>
+				<a href="#part3" id="hangmenu" class="smoothScroll">Take the hang</a>
+			</div>
+
+		</div>
+
+
+		<div id="body">
+			
+			<div id="part1">
+				
+				<div id="TopBox">
+					<div id="header1">
+						<h1 style="font-family: 'Sofia'">Basic Lighting Instruction</h1>
+
+					</div>
+					
+					<div id="image2">
+						<a href="#part2" class="smoothScroll">
+							<img id="downarrow" src="images/downarrow.png" style="width: 20%" />
+						</a>
+					</div>
+
+				</div>
+
+<!--			<div id="sub1">
+					<p>Help for all you noobs</p>
+				</div>
+-->
+
+			</div>
+
+			<div id="part2">
+<!--				
+				<div id="image3">
+					<img src="images/mcbeth.jpg" />
+				</div>
+-->
+				<div id="header2">
+					<button onclick="start()" style="width: 15%" id="begin">
+						<h2>Get Started</h2>
+					</button>
+				</div>
+				
+<!--				<div id="sub2">
+					<p>Stop reading this, and press the button</p>
+				</div>
+-->
+			</div>
+
+			<div id="part3">
+<!--				
+				<div id="image4">
+					<img src="images/peprally.jpg" />
+				</div>
+-->
+				<div id="header3">
+					<button onclick="hang()" style="width: 15%" id="hang">
+						<h2>Learn to Hang & Patch Lights</h2>
+					</button>
+				</div>
+<!--
+				<div id="sub3">
+					<p>Verify that you are worth of holding the title of Lighting Operator</p>
+				</div>
+-->
+
+			</div>
+
+		</div>
+
+
+		<div id="footer">
+			<img src="images/copyright.png" id=copyrightsymbol style="width: 2.5%" />
+			<p id="copyrighttext">Lillian Osborn Technical Theatre, Lighting Division, 2017</p>
+		</div>
+
+	</div>
+
+	<a id="bufferlast"></a>
+	<script>
+	$(function() {
+
+	$('a').last().remove();
+	});
+	</script>
+
+</body>
+
+</html>

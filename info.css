@@ -1,0 +1,77 @@
+#logo {
+	position: relative;
+	left: 1%;
+}
+
+#menu {
+	position: absolute;
+	right: 1%;
+	top: 6%;
+}
+
+#sitename {
+	position: absolute;
+	left: 15%;
+}
+
+#homemenu {
+	position: relative;
+	right: 25%;
+}
+
+#oldsitemenu {
+	position: relative;
+	right: 20%;
+}
+
+#beginmenu {
+	position: relative;
+	right: 15%;
+}
+
+#quizmenu {
+	position: relative;
+	right: 10%;
+}
+
+
+
+#copyrightsymbol {
+	position: absolute;
+	z-index: 1;
+	top: 95%;
+}
+
+#copyrighttext {
+	position: absolute;
+	z-index: 1;
+	top: 92.5%;
+	left: 50px;
+	font-size: 20px;
+}
+
+#stylebutton {
+	position: absolute;
+	z-index: 1;
+	top: 92.5%;
+	right: 50px;
+	font-size: 20px;
+}
+
+
+#uparrow {
+	position: absolute;
+	left: 45%
+}
+
+#downarrow {
+	position: relative;
+	left: 44.9%;
+	top: 50px;
+}
+
+#pages {
+	position: absolute;
+	top: 40%;
+	width: 99%
+}

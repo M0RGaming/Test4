@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="info.css" id="light-style">
+	<link rel="stylesheet" type="text/css" href="infoalt.css" id="dark-style">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--	<script type="text/javascript" src="js/smoothscroll.js"></script> -->
+
+	<title>
+		Lillian Osborne Lighting Tutorial
+	</title>
+
+
+	<script type="text/javascript" src="js/info.js"></script>
+
+
+
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
+
+
+
+</head>
+
+
+<body style="overflow-x: hidden;">
+	
+	<div id="root">
+		
+		<div id="header">
+			
+			<div id="sitename">
+				<h1 style="font-family: 'Sofia'">LO Lighting Tutorial</h1>
+			</div>
+
+			<div id="logo">
+				<a href="index.html" class="smoothScroll">
+					<img src="images/logo.jpg" />
+				</a>
+			</div>
+
+			<div id="menu">
+				<a href="" class="smoothScroll" id="homemenu">Home Page</a>
+				<a href="oldsite.html" id="oldsitemenu">Old Site</a>
+				<a href="#part2" id="beginmenu" class="smoothScroll">Get Started</a>
+				<a href="#part3" id="quizmenu" class="smoothScroll">Take the Quiz</a>
+			</div>
+
+		</div>
+
+		
+		<div id="body">
+			
+
+			<img src="images/uparrow.png" id="uparrow" style="width: 10%" onclick="nothing()" />
+
+			<div id="pages">
+			
+				<div id="step1">
+				<h1 id="step1head">Step 1:</h1>
+				<p id="step1txt">Boot up the Board, (press the power button). If after 10 seconds, lights do not turn on to automaticaly warm up, then refer to the next 2 steps (Step 2 and Step 2.5). If they do turn on, wait for 5 minutes, WITHOUT TOUCHING THE BOARD. There will be a count down just above the command line.</p>
+				</div>
+
+				<div id="step2">
+				<h1 id="step2head">Step 2:</h1>
+				<p id="step2txt">Look at the Cues monitor, if it has 2 cues (0.1 and 0.2) that go under the name [Warm up] and [Blackout], then press the play button. It will automatically warm up the lights, and set it back to blackout after 5 minutes, so feel free to go and do something else (stay in the same room).</p>
+				</div>
+
+				<div id="step2other">
+				<h1 id="step2otherhead">Step 2.5:</h1>
+				<p id="step2othertxt">If there is not 2 cues (0.1 and 0.2) bring the grandmaster down fully, type [1] [Thru] [5] [0] [0] [Full] [Enter]. Then Bring up the grandmaster up to about 30%. Wait for about 5 minutes, then type [1] [Thru] [5] [0] [0] [Out]. Finally Bring up the grandmaster up to 100% again.</p>
+				</div>
+
+				<div id="faders1">
+				<h1 id="faders1head">Faders/Channels:</h1>
+				<p id="faders1txt">To change the intensity of a singular channel, type the channel number followed by [At] then what you want the intensity to be (Followed by an enter). For example lets say you want channel 5 to have an intensity of 50%. You would type [5] [At] [5] [0] [Enter].</p>
+				</div>
+
+				<div id="faders2">
+				<h1 id="faders2head">Faders/Channels Pt.2:</h1>
+				<p id="faders2txt">To change the intensity of multiple channels at once, type the lowest channel you want, followed by [Thru], then the highest channel. Then type [At] and the intensity you wish it to be. Finally, press the [Enter]. For example, if you want to set channels 3-7 to 84% intensity, you would type in: [3] [Thru] [7] [At] [8] [4] [Enter].</p>
+				</div>
+
+				<div id="faders3">
+				<h1 id="faders3head">Faders/Channels Pt.3:</h1>
+				<p id="faders3txt">You are always able to use it the old (but simple) way, by using the faders. Turn the knob at the top to say [Channels 1-40] (or if you are using other channels, just set it to that range), then simply move up and down the sliders to change the intensity.</p>
+				</div>
+
+				<div id="warning">
+				<h1 id="warninghead">Warning:</h1>
+				<p id="warningtxt">Entering slightly more complex area</p>
+				</div>
+
+				<div id="mems">
+				<h1 id="memshead">Memories:</h1>
+				<p id="memstxt">Instead of memories, we will be using the Submasters which are basically memories. Submasters will store any input you give to them, and will allow for easy recall. In order to create a submaster, first set up the input that you want to save. Then press [Record] [Sub] then the number of the submaster you wish to save it to. If you wish to have easy access to it save it to one of the first 40. By saving it to one of the first 40 you are able to switch the fader mode to submaster and use the sliders to control the submasters. If you choose over 40, you will have to use the input command [Sub] followed by the submaster number, then the intensity of the submaster. For example lets say you want to pull up the submaster 61 at 75% intensity. You would input the commands [Sub] [6] [1] [At] [7] [5] [Enter].</p>
+				</div>
+
+				<div id="macro1">
+				<h1 id="macro1head">Macros:</h1>
+				<p id="macro1txt">If you've played computer games before you probably already know what a macro is. If you don't, then a macro is a sequence of inputs that are stored. Unlike a memory/submaster, macros take raw inputs rather then intensity. To put it into perspective, a submaster takes the result and saves it, where as the macro takes the process. Using macros you are able to store a long command and condense it down into 3 button presses, [Macro] followed by the macro number, then [Enter]. For example, in order to activate the macro in slot 5, you would type [Macro] [5] [Enter].</p>
+				</div>
+
+				<div id="macro2">
+				<h1 id="macro2head">Macros Pt.2:</h1>
+				<p id="macro2txt">To save a macro, you can type [Learn] [Macro] then the slot you would like the macro to take up, then [Enter]. If above the command line there is a blinking red Learning Macro, then its recording. Next type in whatever you wish it to do (don't forget to press enter) You can add more then 1 command if you so wish. When you are done typing all you want, then press learn, and the blinking red text should go away. For example, If you wish to save the command [1] [Thru] [50] [Full] [Enter], in macro slot 4, then you would type, [Learn] [Macro] [4] [Enter] [1] [Thru] [50] [Full] [Enter] [Learn].</p>
+				</div>
+
+				<div id="macro3">
+				<h1 id="macro3head">Macros Pt.3:</h1>
+				<p id="macro3txt">It is possible to edit macros, simply head to the macro page, select the macro you would like to edit, then single click on the macro contents. Then use the arrow keys to move between terms. If you need help please contact someone who has experience working with macros (most expert lighting operators will).</p>
+				</div>
+
+				<div id="cue">
+				<h1 id="cuehead">Cues:</h1>
+				<p id="cuetxt">Remember the stack function on the old board (ETC SmartFade)? No, well thats ok, as it was REALLY REALLY obscure. Basically it allowed you to create a sequence of memories. Cues are effectively the same, except much easier to use. To save a cue, set up the input, as you would for a memory, then press [Record] [Cue] then the cue number you wish to save it as (don't forget an [Enter]). If you save more than one, by pressing the play button it will go from your current cue, to the next highest cue. Finally to go to a certain cue, you would type in [Go To Cue] then the cue number, then [Enter].</p>
+				</div>
+
+				<div id="advfeat">
+				<h1 id="advfeathead">Advanced Features:</h1>
+				<p id="advfeattxt">Memories, Macros, and Cues have many advanced features, that take a bit more work to pull off, such as auto turning off memories, and macros being capable of almost anything (as they are pretty much just creating and running a script (like programming)) (even running your show for you!), and linking cues together so that they autoplay. If you would like to learn about these advanced features then speak to one of us people who have experience messing around on the board, or read the manual, as it is too hard to simply type up (even though the manual is typed up, its somewhere around 300 pages).</p>
+				</div>
+
+				<div id="shows">
+				<h1 id="showshead">Shows:</h1>
+				<p id="showstxt">Typically when being in charge of lighting for a show, you would create a new show, which is basically a save file. You can create one by pressing the up arrow right of the command line, clicking on File, then double click New. Keep the patch 1 to 1 selected, and click OK. Before you do this though, remember to save the show that was previously open. To open a pre existing show, go to file, then click Open. Find the show file you wish to open and double click on it. To save a show, well go to File, and press save.</p>
+				</div>
+
+				<div id="newshow">
+				<h1 id="newshowhead">New Shows:</h1>
+				<p id="newshowtxt">When creating a new show, it is a good idea to do the following. First you should create a Macro that auto warms up the lights. You can do this by Or watching the video below (here's the url if you can't see it: [NOT YET MADE])</p>
+				</div>
+
+				<div id="cmdhelp">
+				<h1 id="cmdhelphead">Help with Commands:</h1>
+				<p id="cmdhelptxt">By pressing the help button before pressing the command button you want help with, it will tell you a basic description of what the command does, and a few examples. For more help, feel free to come to any experience lighting board operator, or consult the manual. If I'm correct, then there should be a manual tab on the monitors.</p>
+				</div>
+
+				<div id="tips">
+				<h1 id="tipshead">Useful Tips:</h1>
+				<p id="tipstxt">There is a computer program called ETC Eos family, that will allow you to load a virtual version of the board and its screens. Feel free to play around with that if you want to test something.</p>
+				</div>
+
+				<div id="end">
+				<h1 id="endhead">Congrats, You've Reached the End!</h1>
+				<p id="endtxt">Thank you for taking your time to read this tutorial, feel free to to take the knowledge test on the home page.</p>
+				</div>
+
+			
+
+			<img src="images/downarrow.png" id="downarrow" style="width: 10%" onclick="function1a()" />
+			</div>
+
+
+		</div>
+
+
+		<div id="footer">
+			<img src="images/copyright.png" id=copyrightsymbol style="width: 2.5%" />
+			<p id="copyrighttext">Lillian Osborn Technical Theatre, Lighting Division, 2017</p>
+			<p id="stylebutton" onclick="darkstyle()">Dark Theme</p>
+		</div>
+
+	</div>
+<a id="bufferlast"></a>
+
+<script>
+$(function() {
+
+$('a').last().remove();
+
+$(step2).hide()
+$(step2other).hide()
+$(faders1).hide()
+$(faders2).hide()
+$(faders3).hide()
+$(warning).hide()
+$(mems).hide()
+$(macro1).hide()
+$(macro2).hide()
+$(macro3).hide()
+$(cue).hide()
+$(advfeat).hide()
+$(shows).hide()
+$(newshow).hide()
+$(cmdhelp).hide()
+$(tips).hide()
+$(end).hide()
+
+document.getElementById('dark-style').disabled  = true;
+document.getElementById('light-style').disabled = false;
+
+});
+</script>
+
+</body>
+
+</html>
